@@ -5,6 +5,7 @@ S,number of input tuples in the integration set
 F,total number of tuples in the full disjunction of each integration set
 F_S_ratio,ratio between full disjunction tuples and the total number of input tuples
 total_cols,total number of input columns in the integration set
+missing_nulls,total number of missing nulls in the integration set
 outer_join_tuples,total number of tuples produced when applying outer join to the integration set
 tdr,tuple difference ratio
 biconnected_components,number of biconnected components in the integration set

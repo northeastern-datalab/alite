@@ -6,7 +6,7 @@ Over the last decade, we have made tremendous strides in providing tools for dat
 
 ## Repository Organization
 
-- **codes** folder contains ALITE and baseline source codes.
+- **codes** folder contains ALITE and baseline source codes. It also contains the folders for each benchmark and for embedding given by each method.
 - **statistics** folder contains the statistics of benchmarks and the time taken to integrate tables on each benchmark using different techniques.
 - **README.md** file explains the repository.
 - **requirements.txt** file contains necessary packages to run the project.
@@ -39,12 +39,12 @@ Please visit [this link](https://drive.google.com/drive/folders/1yUgL8TjQievzp8z
 
 ## Reproducibility
 
-1. Download benchmarks from [this link](https://drive.google.com/drive/folders/1yUgL8TjQievzp8zvmHLpa_ClNzc5mTmD?usp=sharing) and upload them to the root folder.
+1. Download benchmarks and embeddings from [this link](https://drive.google.com/drive/folders/1yUgL8TjQievzp8zvmHLpa_ClNzc5mTmD?usp=sharing) and upload them to the [codes](codes/) folder.
 
 2. Run [align_integration_ids.py](codes/align_integration_ids.py) to run the clustering algorithm that assigns the integration ids.
 
 3. Run [align_fd.py](codes/align_fd.py) to compute full disjunction using ALITE.
 
-4. Run [pdelay.py](codes/pdelay.py) to compute full disjunction using BICOMNLOJ.
+4. Run [pdelay_fd.py](codes/pdelay_fd.py) to compute full disjunction using BICOMNLOJ.
 
-5. Run [parafd.py](codes/parafd.py) to compute full disjunction using ParaFD. Note that this algorithm can be used only for the tables having functional relationship.
+5. Run [para_fd.py](codes/para_fd.py) to compute full disjunction using ParaFD. Note that this algorithm can be used only for the tables having functional relationship.
