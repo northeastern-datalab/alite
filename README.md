@@ -1,5 +1,5 @@
 # Integration Data Lake Tables
-Supplementary materials and Implementation codes of Integrating Data Lake Tables (ALITE). You can find the technical report [here](updated-alite-technical-report.pdf).
+This repository contains the supplementary materials and implementation codes for Integrating Data Lake Tables (ALITE). You can find the technical report [here](updated-alite-technical-report.pdf).
 
 ## Abstract
 Over the last decade, we have made tremendous strides in providing tools for data scientists to discover new tables useful for their tasks. But despite these advances, the proper integration of discovered tables has been under-explored. An interesting semantics for integration, called Full Disjunction, was proposed in the 1980’s, but there has been little advancement in using Full Disjunction for data science to integrate tables culled from data lakes. We provide ALITE, the first proposal for scalable integration of tables that may have been discovered using join, union or related table search. We show that ALITE can outperform (both theoretically and empirically) previous algorithms for computing the Full Disjunction. ALITE relaxes previous assumptions that tables share a common attribute names (which completely determine the join columns), are complete (without null values), and have acyclic join patterns. To evaluate our work, we develop and share three new benchmarks for integration that use real data lake tables.
@@ -8,7 +8,7 @@ Over the last decade, we have made tremendous strides in providing tools for dat
 
 - **codes** folder contains ALITE and baseline source codes. It also contains the folders for each benchmark and for embedding given by each method.
 - **statistics** folder contains the statistics of benchmarks and the time taken to integrate tables on each benchmark using different techniques.
-- **alite-technical-report.pdf** is the technical report for ALITE.
+- **updated-alite-technical-report.pdf** is the technical report for ALITE.
 - **README.md** file explains the repository.
 - **requirements.txt** file contains necessary packages to run the project.
 - **synthesized_complex_schema.pdf** file shows the synthesized complex schema used in the experiment.
