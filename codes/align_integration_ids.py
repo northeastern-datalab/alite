@@ -67,7 +67,7 @@ def findsubsets(s, n):
     return list(itertools.combinations(s, n))
 
 # Opening JSON file
-method = r"turl/"
+method = r"bert/"
 vec_length = 300
 if method == "fasttext/" or method == "bert/":
     table_index = 3
@@ -91,7 +91,7 @@ final_f_measure = {}
 start_time = time.time_ns()
 for tablename in all_files:
     try:
-        tablename = tablename.rsplit("/",1)[-1]
+        tablename = tablename.rsplit("\\",1)[-1]
         filename = foldername + tablename
        
         with open(filename) as f:
