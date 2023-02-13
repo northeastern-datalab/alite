@@ -1,5 +1,5 @@
 # Integration Data Lake Tables
-This repository contains the supplementary materials and implementation codes for our paper [Integrating Data Lake Tables](https://www.vldb.org/pvldb/vol16/p932-khatiwada.pdf) (ALITE), accepted for VLDB 2023. You can find the technical report [here](alite-technical-report.pdf).
+This repository contains the supplementary materials and implementation codes for our paper [Integrating Data Lake Tables](https://www.vldb.org/pvldb/vol16/p932-khatiwada.pdf) (ALITE), accepted for [VLDB 2023](https://www.vldb.org/2023/). You can find the technical report [here](alite-technical-report.pdf).
 
 Authors: Aamod Khatiwada, Roee Shraga, Wolfgang Gatterbauer, Renée J. Miller
 
