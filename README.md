@@ -1,5 +1,7 @@
 # Integration Data Lake Tables
-This repository contains the supplementary materials and implementation codes for Integrating Data Lake Tables (ALITE). You can find the technical report [here](alite-technical-report.pdf).
+This repository contains the supplementary materials and implementation codes for [Integrating Data Lake Tables (ALITE)](https://www.vldb.org/pvldb/vol16/p932-khatiwada.pdf), accepted for VLDB 2023. You can find the technical report [here](alite-technical-report.pdf).
+
+Authors: Aamod Khatiwada, Roee Shraga, Wolfgang Gatterbauer, Renée J. Miller
 
 ## Abstract
 Over the last decade, we have made tremendous strides in providing tools for data scientists to discover new tables useful for their tasks. But despite these advances, the proper integration of discovered tables has been under-explored. An interesting semantics for integration, called Full Disjunction, was proposed in the 1980’s, but there has been little advancement in using Full Disjunction for data science to integrate tables culled from data lakes. We provide ALITE, the first proposal for scalable integration of tables that may have been discovered using join, union or related table search. We show that ALITE can outperform (both theoretically and empirically) previous algorithms for computing the Full Disjunction. ALITE relaxes previous assumptions that tables share a common attribute names (which completely determine the join columns), are complete (without null values), and have acyclic join patterns. To evaluate our work, we develop and share three new benchmarks for integration that use real data lake tables.
@@ -50,3 +52,20 @@ Please visit [this link](https://drive.google.com/drive/folders/1yUgL8TjQievzp8z
 4. Run [pdelay_fd.py](codes/pdelay_fd.py) to compute full disjunction using BICOMNLOJ.
 
 5. Run [para_fd.py](codes/para_fd.py) to compute full disjunction using ParaFD. Note that this algorithm can be used only for the tables having functional relationship.
+
+## Citation
+```
+@article{DBLP:journals/pvldb/KhatiwadaSGM22,
+  author    = {Aamod Khatiwada and
+               Roee Shraga and
+               Wolfgang Gatterbauer and
+               Ren{\'{e}}e J. Miller},
+  title     = {Integrating Data Lake Tables},
+  journal   = {Proc. {VLDB} Endow.},
+  volume    = {16},
+  number    = {4},
+  pages     = {932--945},
+  year      = {2022},
+  url       = {https://www.vldb.org/pvldb/vol16/p932-khatiwada.pdf},
+}
+```
