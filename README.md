@@ -48,7 +48,7 @@ Please visit [this link](https://drive.google.com/drive/folders/1yUgL8TjQievzp8z
 cd codes && gdown --folder https://drive.google.com/drive/folders/1yUgL8TjQievzp8zvmHLpa_ClNzc5mTmD
 ```
 ```
-cd Integrating\ Data\ Lake\ Tables\ / && unzip "*.zip" && rm *.zip && mv * ../ && cd .. && rm -r Integrating\ Data\ Lake\ Tables\
+cd Integrating\ Data\ Lake\ Tables\ / && unzip "*.zip" && rm *.zip && mv * ../ && cd .. && rm -r Integrating\ Data\ Lake\ Tables\ /
 ```
 
 2. Run [align_integration_ids.py](codes/align_integration_ids.py) to run the clustering algorithm that assigns the integration ids.
