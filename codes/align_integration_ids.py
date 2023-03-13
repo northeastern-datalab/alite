@@ -20,7 +20,7 @@ import pandas as pd
 import itertools
 from sklearn import metrics
 import time
-
+pd.options.mode.chained_assignment = None  # default='warn'
 #This function takes a column and determines whether it is text or numeric column
 #This has been done using a well-known information retrieval technique
 #Check each cell to see if it is text. Then if enough number of cells are 
