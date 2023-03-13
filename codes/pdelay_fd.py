@@ -504,7 +504,7 @@ if __name__ == "__main__":
             filenames = glob.glob(cluster + "/*.csv")
         except:
             continue
-        cluster_name = cluster.rsplit("/")[-1]
+        cluster_name = cluster.rsplit(os.sep)[-1]
         m = len(filenames)
         all_columns_order = set()
 # =============================================================================
@@ -611,7 +611,7 @@ if __name__ == "__main__":
             else:
                 first_table = PDELAYFD(first_bcc, first_bcc[0])
             if isinstance(first_table, str) == True:
-                append_list = [cluster.rsplit("/")[-1], total_tables, "nan", "nan", len(bcc_table_ids), "nan", "nan", "first cut off"]
+                append_list = [cluster.rsplit(os.sep)[-1], total_tables, "nan", "nan", len(bcc_table_ids), "nan", "nan", "first cut off"]
                 a_series = pd.Series(append_list, index = statistics.columns)
                 statistics = statistics.append(a_series, ignore_index=True)
                 statistics.to_csv(stat_path, index = False)
@@ -634,7 +634,7 @@ if __name__ == "__main__":
                 else:
                     second_table = PDELAYFD(file_list, file_list[0])
                 if isinstance(second_table, str) == True:
-                    append_list = [cluster.rsplit("/")[-1], total_tables, "nan", "nan", len(bcc_table_ids), "nan", "nan", "second cut off"]
+                    append_list = [cluster.rsplit(os.sep)[-1], total_tables, "nan", "nan", len(bcc_table_ids), "nan", "nan", "second cut off"]
                     a_series = pd.Series(append_list, index = statistics.columns)
                     statistics = statistics.append(a_series, ignore_index=True)
                     statistics.to_csv(stat_path, index = False)
@@ -674,7 +674,7 @@ if __name__ == "__main__":
         subsume_time = int(end_time - start_subsume_time)/ 10**9
         total_time = int(end_time - start_time)/ 10**9
         subsumed_tuples = len(list(fd_data)) - len(subsumptionResults)
-        append_list = [cluster.rsplit("/")[-1], total_tables, len(subsumptionResults),
+        append_list = [cluster.rsplit(os.sep)[-1], total_tables, len(subsumptionResults),
                        len(null_set), len(bcc_table_ids), subsume_time, subsumed_tuples, total_time]
         a_series = pd.Series(append_list, index = statistics.columns)
         statistics = statistics.append(a_series, ignore_index=True)

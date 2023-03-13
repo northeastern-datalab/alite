@@ -536,7 +536,7 @@ if __name__ == "__main__":
             filenames = glob.glob(cluster + "/*.csv")
         except:
             continue
-        cluster_name = cluster.rsplit("/")[-1]
+        cluster_name = cluster.rsplit(os.sep)[-1]
         result_FD, stats_df, debug_dict = FDAlgorithm(filenames, cluster_name)
         #save result to hard drive
         #result_FD.to_csv(output_path+ cluster_name+".csv",index = False)

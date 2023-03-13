@@ -211,7 +211,7 @@ for cluster in foldernames:
             filenames = glob.glob(cluster + "/*.csv")
         except:
             continue
-        cluster_name = cluster.rsplit("/")[-1]
+        cluster_name = cluster.rsplit(os.sep)[-1]
         m = len(filenames)
         all_columns_order = set()
 # =============================================================================

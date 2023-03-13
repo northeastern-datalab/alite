@@ -4,6 +4,7 @@ Created on Sun Feb 20 16:43:11 2022
 
 @author: khati
 """
+import os
 import math
 import glob
 import json
@@ -92,7 +93,7 @@ final_f_measure = {}
 start_time = time.time_ns()
 for tablename in all_files:
     try:
-        tablename = tablename.rsplit("\\",1)[-1]
+        tablename = tablename.rsplit(os.sep,1)[-1]
         filename = foldername + tablename
        
         with open(filename) as f:
