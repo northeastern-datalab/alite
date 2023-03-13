@@ -43,9 +43,12 @@ Please visit [this link](https://drive.google.com/drive/folders/1yUgL8TjQievzp8z
 
 ## Reproducibility
 
-1. Download benchmarks and embeddings from [this link](https://drive.google.com/drive/folders/1yUgL8TjQievzp8zvmHLpa_ClNzc5mTmD?usp=sharing) and upload them to the [codes](codes/) folder. You can run the following command on your terminal which is based on [gdown package](https://pypi.org/project/gdown/). Make sure that you are in the home of repo directory.
+1. Download benchmarks and embeddings from [this link](https://drive.google.com/drive/folders/1yUgL8TjQievzp8zvmHLpa_ClNzc5mTmD?usp=sharing) and upload them to the [codes](codes/) folder. You can run the following command on your terminal which is based on [gdown package](https://pypi.org/project/gdown/). As the command takes you to [codes](codes/) folder before downloading the files, make sure that you are in home of the repo.
 ```
 cd codes && gdown --folder https://drive.google.com/drive/folders/1yUgL8TjQievzp8zvmHLpa_ClNzc5mTmD
+```
+```
+cd Integrating\ Data\ Lake\ Tables\ / && unzip "*.zip" && rm *.zip && mv * ../ && cd .. && rm -r Integrating\ Data\ Lake\ Tables\
 ```
 
 2. Run [align_integration_ids.py](codes/align_integration_ids.py) to run the clustering algorithm that assigns the integration ids.
