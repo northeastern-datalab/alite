@@ -67,7 +67,8 @@ def findsubsets(s, n):
     return list(itertools.combinations(s, n))
 
 # Opening JSON file
-method = r"bert/"
+
+method = r"bert/" #change it to fasttext or turl for using the respective embeddings.
 vec_length = 300
 if method == "fasttext/" or method == "bert/":
     table_index = 3
@@ -209,7 +210,7 @@ for tablename in all_files:
         
         for i in range(min_k, min(max_k, max_k)):
             #clusters = KMeans(n_clusters=14).fit(x)
-            clusters = AgglomerativeClustering(n_clusters=i, affinity='l2',
+            clusters = AgglomerativeClustering(n_clusters=i, metric='l2',
                         compute_distances = True , linkage='complete', connectivity = s)
             clusters.fit_predict(x)
             labels = (clusters.labels_) #.tolist()
