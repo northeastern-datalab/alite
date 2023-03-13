@@ -72,6 +72,6 @@ cd Integrating\ Data\ Lake\ Tables\ / && unzip "*.zip" && rm *.zip && mv * ../ &
   number    = {4},
   pages     = {932--945},
   year      = {2022},
-  url       = {https://www.vldb.org/pvldb/vol16/p932-khatiwada.pdf},
+  doi       = {https://doi.org/10.14778/3574245.3574274},
 }
 ```
