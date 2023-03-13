@@ -43,7 +43,7 @@ Please visit [this link](https://drive.google.com/drive/folders/1yUgL8TjQievzp8z
 
 ## Reproducibility
 
-1. Download benchmarks and embeddings from [this link](https://drive.google.com/drive/folders/1yUgL8TjQievzp8zvmHLpa_ClNzc5mTmD?usp=sharing) and upload them to the [codes](codes/) folder. For convenience, you can run the following commands on your terminal which is based on [gdown package](https://pypi.org/project/gdown/). As the command takes you to [codes](codes/) folder before downloading the files, make sure that you are in home of the repo.
+1. Download benchmarks and embeddings from [this link](https://drive.google.com/drive/folders/1yUgL8TjQievzp8zvmHLpa_ClNzc5mTmD?usp=sharing) and upload them to the [codes](codes/) folder. For convenience, you can run the following commands on your terminal which is based on [gdown package](https://pypi.org/project/gdown/). As the first command takes you to [codes](codes/) folder before downloading the files, make sure that you are in home of the repo.
 ```
 cd codes && gdown --folder https://drive.google.com/drive/folders/1yUgL8TjQievzp8zvmHLpa_ClNzc5mTmD
 ```
